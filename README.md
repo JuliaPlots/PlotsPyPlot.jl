@@ -18,3 +18,7 @@ plot(sin)
 ```
 
 See the [Plots documentation](http://docs.juliaplots.org/latest/) for more information.
+
+## Credits
+
+The code is taken from [Plots](https://github.com/JuliaPlots/Plots.jl) and was originally written by Tom Breloff (@tbreloff) and has been maintained by the [JuliaPlot members](https://github.com/orgs/JuliaPlots/people) and many other [contributers](https://github.com/JuliaPlots/Plots.jl/graphs/contributors).

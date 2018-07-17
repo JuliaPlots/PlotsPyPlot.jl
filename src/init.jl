@@ -1,8 +1,10 @@
 using Reexport
 @reexport using Plots
 
+_ignore_syms = (:eval, Symbol("#eval"), :include, Symbol("#include"), :Plots)
+
 for sym in names(Plots, all = true)
-    if !(sym in (:eval, Symbol("#eval"), :include, Symbol("#include")))
+    if !(sym in _ignore_syms)
         @eval import Plots.$sym
     end
 end
